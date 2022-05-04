@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "node.js 直播班 week3",
+		"_postman_id": "9f8fa93b-7c12-a4fe-eb30-158fb01a548c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getData",
+			"request": {
+				"url": "https://shrouded-eyrie-70183.herokuapp.com/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n          \"content\": \"124\",\n          \"name\":\"JUDY\"\n        }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "postData",
+			"request": {
+				"url": "https://shrouded-eyrie-70183.herokuapp.com/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"黃金獵犬5\",\n  \"tags\": [\"毛孩\"],\n  \"type\": \"group\",\n  \"content\": \"黃金獵犬敲可愛5\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateData",
+			"request": {
+				"url": "https://shrouded-eyrie-70183.herokuapp.com/posts/6272b072e7af6d6048f76f89",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\":\"貓咪超級可愛\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOneData",
+			"request": {
+				"url": "https://shrouded-eyrie-70183.herokuapp.com/posts/6272b072e7af6d6048f76f89",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAllData",
+			"request": {
+				"url": "https://shrouded-eyrie-70183.herokuapp.com/posts",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
