@@ -24,4 +24,3 @@ app.use('/users', usersRouter);
 
 module.exports = app;
 
-console.log('test')
