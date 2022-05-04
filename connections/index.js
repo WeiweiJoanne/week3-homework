@@ -8,6 +8,6 @@ const DB = process.env.DATABASE.replace('<password>', process.env.DATABASE_PASSW
 //   .then(()=>console.log('資料庫連線成功'))
 //   .catch (err=> console.log(err))
 
-mongoose.connect("mongodb://localhost:27017/posts")
+mongoose.connect("mongodb://localhost:27017/homework")
   .then(() => console.log('資料庫連線成功'))
   .catch(err => console.log(err))
